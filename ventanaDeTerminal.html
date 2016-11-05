@@ -1,0 +1,57 @@
+<html lang="en">
+	<head>
+		<title>Sistema de POIs</title>
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+	
+	<header>
+		<div>
+			<img src="imagenes/POI_Image.png" width="120" height="100">
+			<h1>Sistema de consulta de POIs</h1>
+		</div>
+	</header>
+		
+	<body>
+
+		<ul class="NavigationBar">
+			<li class="ElementoDelBar"><a href="#home">B&uacute;squeda de POIs</a></li>
+			<li class="ElementoDelBar" style="float:right"><a class="active" href="principal.html">Cerrar Sesi&oacute;n</a></li>
+		</ul>
+		
+		<br>
+		<label for="buscar">Buscar POI:</label>
+		<input type="text" class="TextBoxCriterio" placeholder="Escriba el criterio" maxlength="20" name="buscar" id="buscar">
+		<input type="button" class="ButtonBuscar" value="Buscar">
+		<!--Al hacer click en el boton de arriba deberia ir a Java, buscar, y luego mostrar el <div> que viene abajo-->
+		<br><br>
+		
+		<h4>Lo que viene abajo deberia aparecer solo cuando se toca el boton buscar de arriba</h4>
+		<div class="TablaDePOIsEncontrados">
+			<h2><u>POIs encontrados</u></h2>
+			<table>
+				<tr>
+					<th>Nombre</th>
+					<th>Tipo</th>
+					<th>Calle Principal</th>
+					<th>M&aacute;s Info</th>
+				</tr>
+				<!--A partir de aca deberia hacerse un forEach para que cada elemento de la lista (un POI) que
+				me devuelve Java, se represente como una fila de la tabla con sus correspondientes datos-->
+				<tr>
+					<td>Parada 114</td>
+					<td>Parada de colectivo</td>
+					<td>Monroe</td>
+					<td><a href="poiEspecifico/verDetallesPoi.html">Ver</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	
+	<footer>
+		<p>Grupo 8 - Copyright 2016 - Todos los derechos reservados</p>
+	</footer>
+	
+	
+
+</html>
+
