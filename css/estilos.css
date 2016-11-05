@@ -1,9 +1,18 @@
+header{
+	width:100%;
+	overflow:hidden;
+	background:#efefef;
+}
 header h1{
 	text-align:center;
 }
 
-.ingreso{
-	text-align:center;
+header .logo{
+	float:left;
+}
+header .tituloPrincipal{
+	float:center;
+	line-height:100px;
 }
 
 body{
@@ -27,7 +36,17 @@ input{
 	font-size: 1em;
 }
 
-.wrapper {
+.wrapper{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.ingreso{
+	text-align:center;
+}
+
+.botonesPrincipales {
     text-align: center;
 }
 
