@@ -26,11 +26,19 @@
 		<input type="radio" name="group1" value="Nombre">Nombre
 		<input type="radio" name="group1" value="Milk">Tipo
 		
-		<input type="button" class="ButtonBuscar" value="Buscar">
+		<input type="button" id="boton" class="ButtonBuscar" value="Buscar">
 		<br><br>
-		<h4>Lo que viene abajo deberia aparecer solo cuando se toca el boton buscar de arriba</h4>
-		<div class="TablaDePOIsEncontrados">
-			<h2><u>POIs encontrados</u></h2>
+		<script>(function(){
+			var buscarPOIs = function(){
+				 document.getElementById("TablaDePOIsEncontrados").style.visibility = "visible";
+			}
+		
+			var boton = document.getElementById('boton');
+			boton.addEventListener("click", buscarPOIs);
+		}())
+		</script>
+			<h3><u>POIs encontrados</u></h3>
+			<div class="TablaDePOIsEncontrados" id="TablaDePOIsEncontrados">
 			<table>
 				<tr>
 					<th>Nombre</th>

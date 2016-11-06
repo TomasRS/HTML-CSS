@@ -18,13 +18,22 @@
 		<br>
 		<label for="buscar">Buscar POI:</label>
 		<input type="text" class="TextBoxCriterio" placeholder="Escriba el criterio" maxlength="20" name="buscar" id="buscar">
-		<input type="button" class="ButtonBuscar" value="Buscar">
+		<input type="button" id="boton" class="ButtonBuscar" value="Buscar">
+		<script>(function(){
+			var buscarPOIs = function(){
+				 document.getElementById("TablaDePOIsEncontrados").style.visibility = "visible";
+			}
+		
+			var boton = document.getElementById('boton');
+			boton.addEventListener("click", buscarPOIs);
+		}())
+		</script>
 		<!--Al hacer click en el boton de arriba deberia ir a Java, buscar, y luego mostrar el <div> que viene abajo-->
 		<br><br>
 		
-		<h4>Lo que viene abajo deberia aparecer solo cuando se toca el boton buscar de arriba</h4>
-		<div class="TablaDePOIsEncontrados">
-			<h2><u>POIs encontrados</u></h2>
+		
+		<h3><u>POIs encontrados</u></h3>
+			<div class="TablaDePOIsEncontrados" id="TablaDePOIsEncontrados">
 			<table>
 				<tr>
 					<th>Nombre</th>
