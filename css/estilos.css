@@ -1,24 +1,24 @@
 header{
-	width:100%;
-	overflow:hidden;
+	position: absolute;
+	padding: 0.5rem;
+	top:0;
+	left:0;
+	right:0;
 	background:#efefef;
-}
-header h1{
-	text-align:center;
 }
 
 header .logo{
 	float:left;
-}
-header .tituloPrincipal{
-	float:center;
-	line-height:100px;
 }
 
 body{
 	background-color: lightgray;
 	font-family: calibri;
 	font-size: 1em;
+}
+
+.content{
+	padding-top:75px;
 }
 
 footer {
