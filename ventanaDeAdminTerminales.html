@@ -20,41 +20,41 @@
 			<li class="ElementoDelBar" style="float:right"><a class="active" href="principal.html">Cerrar Sesi&oacute;n</a></li>
 		</ul>
 		<br>
-		<h2><u>Administraci&oacute;n de POIs</u></h2>
+		<h2><u>Administraci&oacute;n de Terminales</u></h2>
 		
-		<label for="buscar">Buscar POI:</label>
+		<label for="buscar">Buscar Terminal:</label>
 		<input type="text" class="TextBox" placeholder="Escriba aqu&iacute;" maxlength="20" name="buscar" id="buscar">
 		
 		<label>Filtrar por:</label>
-		<input type="radio" name="group1" value="Nombre">Nombre
-		<input type="radio" name="group1" value="Milk">Tipo
+		<input type="checkbox" value="Nombre">Comuna
 		
 		<input type="button" class="ButtonBuscar" value="Buscar">
 		<br><br>
 		<h4>Lo que viene abajo deberia aparecer solo cuando se toca el boton buscar de arriba</h4>
 		<div class="TablaDePOIsEncontrados">
-			<h2><u>POIs encontrados</u></h2>
+			<h2><u>Terminales encontradas</u></h2>
 			<table>
 				<tr>
 					<th>Nombre</th>
-					<th>Tipo</th>
-					<th>Calle Principal</th>
+					<th>Comuna</th>
+					<th>Acciones</th>
 					<th>Editar</th>
 					<th>Eliminar</th>
 				</tr>
 				<!--A partir de aca deberia hacerse un forEach para que cada elemento de la lista (un POI) que
 				me devuelve Java, se represente como una fila de la tabla con sus correspondientes datos-->
 				<tr>
-					<td>Parada 114</td>
-					<td>Parada de colectivo</td>
-					<td>Monroe</td>
+					<td>Terminal Cabildo</td>
+					<td>14</td>
+					<td>A, B, C</td>
 					<td><a href="poiEspecifico/verDetallesPoi.html">Entrar</a></td>
 					<td><input type="checkbox" name="" id=""></td>
 				</tr>
 			</table>
 		</div>
 		
-		<input type="button" class="ButtonEliminarPOIs" value="Eliminar">
+		<input type="button" class="ButtonEliminarTerminales" value="Eliminar">
+		<input type="button" class="ButtonAgregarTerminal" value="Agregar">
 	</body>
 	
 	<footer>

@@ -73,8 +73,24 @@ th{
 	color:white;
 }
 
+td{
+	background-color: white;
+}
+
 .SelectBox{
 	padding:4px;
+}
+
+.TextBoxFechaDesde{
+	margin-left: 7.2em;
+	width: 94px;
+}
+
+.TextBoxFechaHasta{
+	width: 94px;
+}
+.TextBoxTerminal{
+	margin-left: 6.1em;
 }
 .BotonDeCambioDePagina{
 	-moz-appearance: button;
